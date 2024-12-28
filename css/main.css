@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #181313;
+}
+
+.maincontainer {
+
+    width: 90%;
+    max-width: 350px;
+    height: 480px;
+    background-color: rgb(101, 36, 36);
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+
+.datashow {
+    font-size: 1.5rem;
+    color: #f0f0f0;
+}
+
+.showtotal {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #f0f0f0;
+}
+
+.numbers-sigens {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.numbers {
+    position: relative;
+    top: 10px;
+    font-size: 1.2rem;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.numbers:hover {
+    background-color: aliceblue;
+}
+
+@media screen and (max-width: 768px) {
+    .maincontainer {
+        width: 100%;
+        margin: 0;
+    }
+
+    .numbers {
+        height: 50px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .showtotal {
+        font-size: 1.2rem;
+    }
+
+    .numbers {
+        height: auto;
+        font-size: 0.9rem;
+    }
+}
